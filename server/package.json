@@ -1,0 +1,25 @@
+{
+  "name": "temp-mail-backend",
+  "version": "1.0.0",
+  "description": "Temporary email service backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["temp-mail", "temporary-email"],
+  "author": "bedwarskid1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "sqlite3": "^5.1.6",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

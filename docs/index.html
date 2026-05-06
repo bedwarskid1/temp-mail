@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temp Mail Generator | Anonymous Email Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="title">📧 Temp Mail</h1>
+        <p class="subtitle">Anonymous temporary email addresses in seconds</p>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-section">
+      <!-- Generate Section -->
+      <div class="card">
+        <h2 class="card-title">Generate Email</h2>
+        <p class="card-description">Create a new temporary email address instantly</p>
+
+        <button id="generateBtn" class="btn btn-primary btn-large">
+          🔄 Generate New Email
+        </button>
+      </div>
+
+      <!-- Email Display Section -->
+      <div id="emailDisplay" class="card hidden">
+        <h2 class="card-title">Your Temporary Email</h2>
+
+        <div class="email-container">
+          <input
+            id="emailInput"
+            type="text"
+            class="email-input"
+            readonly
+          />
+          <button id="copyBtn" class="btn btn-secondary btn-icon">
+            📋 Copy
+          </button>
+        </div>
+
+        <div class="email-info">
+          <div class="info-item">
+            <span class="info-label">Expires in:</span>
+            <span id="countdown" class="info-value countdown">24:00:00</span>
+          </div>
+        </div>
+
+        <button id="deleteBtn" class="btn btn-danger">
+          🗑️ Delete Account
+        </button>
+      </div>
+
+      <!-- Inbox Section -->
+      <div id="inboxSection" class="card hidden">
+        <div class="inbox-header">
+          <h2 class="card-title">📬 Inbox</h2>
+          <span class="message-badge" id="messageCount">0</span>
+        </div>
+        <p class="card-description">Messages will appear here automatically</p>
+
+        <div id="messagesList" class="messages-list">
+          <p class="empty-state">📭 No messages yet. Waiting for emails...</p>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant</h3>
+          <p class="feature-desc">Create emails in seconds</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Private</h3>
+          <p class="feature-desc">No signup required</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗑️</div>
+          <h3 class="feature-title">Auto-Delete</h3>
+          <p class="feature-desc">Expires after 24 hours</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title">Free</h3>
+          <p class="feature-desc">Always completely free</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with ❤️ by <strong>bedwarskid1</strong></p>
+      <p class="footer-small">© 2026 Temp Mail. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
